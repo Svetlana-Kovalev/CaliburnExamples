@@ -8,6 +8,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ContentControl  cm:View.Model="{Binding TheSameViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"/>
+        <ContentControl  cm:View.Model="{Binding TheSameViewModel}"
+                         cm:View.Context="Another"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                         Margin="5"/>
     </Grid>
 </UserControl>

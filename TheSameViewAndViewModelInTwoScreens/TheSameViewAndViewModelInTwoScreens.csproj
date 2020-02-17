@@ -83,6 +83,9 @@
     <Compile Include="Views\TheSameView.xaml.cs">
       <DependentUpon>TheSameView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TheSame\Another.xaml.cs">
+      <DependentUpon>Another.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
@@ -127,6 +130,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\TheSameView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TheSame\Another.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
