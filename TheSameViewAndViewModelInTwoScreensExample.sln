@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheSameViewAndViewModelInTwoScreens", "TheSameViewAndViewModelInTwoScreens\TheSameViewAndViewModelInTwoScreens.csproj", "{969FC23F-633F-40E2-A5B1-1D63A29CDC0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlLibraryForTheSameView", "WpfControlLibraryForTheSameView\WpfControlLibraryForTheSameView.csproj", "{97DC3133-51D2-4D56-880D-768B06EF017B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{969FC23F-633F-40E2-A5B1-1D63A29CDC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{969FC23F-633F-40E2-A5B1-1D63A29CDC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{969FC23F-633F-40E2-A5B1-1D63A29CDC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DC3133-51D2-4D56-880D-768B06EF017B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DC3133-51D2-4D56-880D-768B06EF017B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DC3133-51D2-4D56-880D-768B06EF017B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DC3133-51D2-4D56-880D-768B06EF017B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

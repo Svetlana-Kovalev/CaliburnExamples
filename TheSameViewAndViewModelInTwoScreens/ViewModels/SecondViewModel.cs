@@ -1,6 +1,4 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Caliburn.Micro;
+﻿using Caliburn.Micro;
 
 namespace TheSameViewAndViewModelInTwoScreens.ViewModels
 {
@@ -31,27 +29,6 @@ namespace TheSameViewAndViewModelInTwoScreens.ViewModels
         public SecondViewModel(TheSameViewModel theSameViewModel)
         {
             TheSameViewModel = theSameViewModel;
-        }
-
-        public override object GetView(object context = null)
-        {
-
-            return base.GetView(context);
-        }
-
-        protected override Task OnInitializeAsync(CancellationToken cancellationToken)
-        {
-            return base.OnInitializeAsync(cancellationToken);
-        }
-
-        protected override void OnViewAttached(object view, object context)
-        {
-            base.OnViewAttached(view, context);
-        }
-
-        protected override void OnViewLoaded(object view)
-        {
-            base.OnViewLoaded(view);
         }
     }
 }
