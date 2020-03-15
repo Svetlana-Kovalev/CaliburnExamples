@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using WpfControlLibraryForTheSameView.ViewModels;
 
 namespace TheSameViewAndViewModelInTwoScreens.ViewModels
 {
@@ -8,9 +9,17 @@ namespace TheSameViewAndViewModelInTwoScreens.ViewModels
         public AppMainViewModel()
         {
             TheSameViewModel theSameViewModel = new TheSameViewModel();
+            MutualViewModel mutualViewModel = new MutualViewModel();
+            FirstForMutualViewModel firstForMutualViewModel = new FirstForMutualViewModel(mutualViewModel);
+            SecondForMutualViewModel secondForMutualViewModel = new SecondForMutualViewModel(mutualViewModel);
             Screens = new BindableCollection<Screen>
             {
-                new FirstViewModel(theSameViewModel), new SecondViewModel(theSameViewModel), theSameViewModel
+                new FirstViewModel(theSameViewModel, mutualViewModel),
+                new SecondViewModel(theSameViewModel, mutualViewModel),
+                firstForMutualViewModel,
+                secondForMutualViewModel,
+                theSameViewModel,
+                mutualViewModel
             };
         }
 

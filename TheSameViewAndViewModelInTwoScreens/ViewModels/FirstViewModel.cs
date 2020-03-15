@@ -1,6 +1,5 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Caliburn.Micro;
+﻿using Caliburn.Micro;
+using WpfControlLibraryForTheSameView.ViewModels;
 
 namespace TheSameViewAndViewModelInTwoScreens.ViewModels
 {
@@ -28,9 +27,11 @@ namespace TheSameViewAndViewModelInTwoScreens.ViewModels
             }
         }
 
-        public FirstViewModel(TheSameViewModel theSameViewModel)
+        public MutualViewModel MutualViewModel { get; }
+        public FirstViewModel(TheSameViewModel theSameViewModel,  MutualViewModel mutualViewModel)
         {
             TheSameViewModel = theSameViewModel;
+            MutualViewModel = mutualViewModel;
         }
     }
 }

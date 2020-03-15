@@ -8,9 +8,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ContentControl  cm:View.Model="{Binding TheSameViewModel}"
+        <StackPanel>
+            <ContentControl  cm:View.Model="{Binding TheSameViewModel}"
                          cm:View.Context="Another"
                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                          Margin="5"/>
+            <ContentControl  cm:View.Model="{Binding MutualViewModel}"
+                             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                             Margin="5"/>
+        </StackPanel>
     </Grid>
 </UserControl>

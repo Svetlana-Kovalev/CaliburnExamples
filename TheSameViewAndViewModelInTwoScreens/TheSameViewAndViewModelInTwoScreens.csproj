@@ -115,7 +115,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WpfControlLibraryForTheSameView\WpfControlLibraryForTheSameView.csproj">
+      <Project>{97dc3133-51d2-4d56-880d-768b06ef017b}</Project>
+      <Name>WpfControlLibraryForTheSameView</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Views\AppMainView.xaml">
       <SubType>Designer</SubType>
